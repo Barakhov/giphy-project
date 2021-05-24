@@ -1,0 +1,63 @@
+:root {
+  /* larger than heading font sizes */
+  --fs-giga: 80px;
+  --fs-mega: 70px;
+  --fs-kilo: 60px;
+  /* heading font sizes */
+  --fs-h1: 36px;
+  --fs-h2: 32px;
+  --fs-h3: 28px;
+  --fs-h4: 24px;
+  --fs-h5: 20px;
+  --fs-h6: 18px;
+  /* base font size - applied at body / html level */
+  --fs-base: 16px;
+  /* smaller than heading font sizes */
+  --fs-milli: 14px;
+  --fs-micro: 10px;
+  --fs-nano: 8px;
+  /*Weights*/
+  --bold: 700;
+  --semibold: 600;
+  --regular: 400;
+  /*Base*/
+  --base-ff: 'Work Sans', sans-serif;
+  --base-fs: var(--fs-base);
+  --base-fw: var(--regular);
+  --base-lh: var(--fs-h6);
+  --base-gap: 4px;
+  /*Gap*/
+  --gap-xxxxl: calc(var(--base-gap) * 10);
+  /*40*/
+  --gap-xxxl: calc(var(--base-gap) * 8);
+  /*32*/
+  --gap-xxl: calc(var(--base-gap) * 6);
+  /*24*/
+  --gap-xl: calc(var(--base-gap) * 5);
+  /*20*/
+  --gap-lg: calc(var(--base-gap) * 4);
+  /*16*/
+  --gap-md: calc(var(--base-gap) * 2);
+  /*8*/
+  --gap-sm: calc(var(--base-gap));
+  /*Colors*/
+  /*Primary*/
+  --clr-black: #000000;
+  --clr-white: #ffffff;
+  --clr-purple: #372fff;
+  /*Secondary*/
+  --clr-blue: #2019e2;
+  --clr-leve: #c6c3ff;
+  --clr-green: #00f49c;
+  --clr-coral: #fd8989;
+  /*Highlight*/
+  --clr-hl-pink: rgba(255, 79, 121, 0.2);
+  --clr-hl-green: rgba(0, 244, 156, 0.2);
+  --clr-hl-yellow: rgba(250, 255, 0, 0.3);
+  /*Notification*/
+  --clr-not-green: #00ad07;
+  --clr-not-red: #e8421e;
+  /*Background*/
+  --clr-bg-blue: #0c1246;
+  --clr-bg-magno: #f4f4ff;
+}
