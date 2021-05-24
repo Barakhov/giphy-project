@@ -44,20 +44,14 @@
   /*Primary*/
   --clr-black: #000000;
   --clr-white: #ffffff;
-  --clr-purple: #372fff;
+  --clr-blue: #003049;
   /*Secondary*/
-  --clr-blue: #2019e2;
-  --clr-leve: #c6c3ff;
-  --clr-green: #00f49c;
-  --clr-coral: #fd8989;
+  --clr-red: #D62828;
+  --clr-orange: #F77F00;
+  --clr-yellow: #FCBF49;
+  --clr-lemon: #EAE2B7;
   /*Highlight*/
-  --clr-hl-pink: rgba(255, 79, 121, 0.2);
-  --clr-hl-green: rgba(0, 244, 156, 0.2);
-  --clr-hl-yellow: rgba(250, 255, 0, 0.3);
-  /*Notification*/
-  --clr-not-green: #00ad07;
-  --clr-not-red: #e8421e;
-  /*Background*/
-  --clr-bg-blue: #0c1246;
-  --clr-bg-magno: #f4f4ff;
+  --clr-hl-blue: rgba(0, 48, 73, 0.2);
+  --clr-hl-red: rgba(214, 40, 40, 0.2);
+  --clr-hl-yellow: rgba(252, 191, 73, 0.3);
 }
