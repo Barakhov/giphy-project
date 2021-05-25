@@ -2,7 +2,9 @@
   <div id="app">
     <BaseHeader />
     <main>
-      <GifsList :gifs="searchedGifs" />
+      <input type="text" @input="searchGifs" />
+
+      <GifsList v-if="searchedGifs.length" :gifs="searchedGifs" />
       <GifsList :gifs="gifs" />
     </main>
   </div>
@@ -26,7 +28,7 @@ export default {
   },
   created() {
     this.loadData()
-    this.searchGifs()
+    // this.searchGifs()
   },
   methods: {
     async loadData() {
@@ -37,9 +39,10 @@ export default {
 
       this.gifs = data
     },
-    async searchGifs() {
+    async searchGifs(event) {
+      const text = event.target.value
       const response = await fetch(
-        `https://api.giphy.com/v1/gifs/search?api_key=Jpq36rYnmRXjPUc0qfqxEAple8aeiOzG&limit=10&q=cat`
+        `https://api.giphy.com/v1/gifs/search?api_key=Jpq36rYnmRXjPUc0qfqxEAple8aeiOzG&limit=10&q=${text}`
       )
       const { data } = await response.json()
 
