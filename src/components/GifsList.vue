@@ -37,17 +37,20 @@ export default {
 .gif-block {
   position: relative;
   display: inline-block;
+  border-radius: 5px;
+  overflow: hidden;
+  box-shadow: 4px 4px #9e9e9e;
   background-color: #e1e1e1;
 
   &__p {
     position: absolute;
     bottom: 0;
+    box-sizing: border-box;
     width: 100%;
-    background-color: #e1e1e1;
     padding: 1rem;
     margin: 0;
     text-align: center;
-    box-sizing: border-box;
+    background-color: #e1e1e1;
   }
 
   &__img {
