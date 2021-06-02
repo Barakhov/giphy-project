@@ -10,8 +10,9 @@
         placeholder="Tyepea aquí.."
         @key-enter="searchGifs(textFilter)"
       />
-      <BaseButton text="Buscar" theme="primary" />
-      <BaseButton @click="searchGifs(textFilter)">Manolo</BaseButton>
+      <BaseButton theme="primary" @click="searchGifs(textFilter)"
+        >Manolo</BaseButton
+      >
       <GifsList v-if="searchedGifs.length" :gifs="searchedGifs" />
       <GifsList :gifs="gifs" />
     </main>
