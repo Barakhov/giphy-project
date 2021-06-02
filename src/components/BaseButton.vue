@@ -22,11 +22,13 @@ export default {
 </script>
 
 <style lang="scss">
+@import '@/assets/styles/scss/variables.scss';
+
 .base-button {
-  background-color: aquamarine;
+  background-color: $clr-hl-blue;
 
   &.primary {
-    background-color: #fabada;
+    background-color: $clr-hl-red;
   }
 }
 </style>
