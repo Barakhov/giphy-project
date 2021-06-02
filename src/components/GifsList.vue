@@ -28,6 +28,8 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+@import '@/assets/styles/scss/variables.scss';
+
 .gifs-wrapper {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
@@ -39,8 +41,8 @@ export default {
   display: inline-block;
   border-radius: 5px;
   overflow: hidden;
-  box-shadow: 4px 4px #9e9e9e;
-  background-color: #e1e1e1;
+  box-shadow: 4px 4px $clr-orange;
+  background-color: $clr-lemon;
 
   &__p {
     position: absolute;
@@ -50,7 +52,7 @@ export default {
     padding: 1rem;
     margin: 0;
     text-align: center;
-    background-color: #e1e1e1;
+    background-color: $clr-lemon;
   }
 
   &__img {
