@@ -11,8 +11,9 @@
         @key-enter="searchGifs(textFilter)"
       />
       <BaseButton theme="primary" @click="searchGifs(textFilter)"
-        >Manolo</BaseButton
+        >Hit me</BaseButton
       >
+      <BaseButton @click="resetTextFilter">Reset</BaseButton>
       <GifsList v-if="searchedGifs.length" :gifs="searchedGifs" />
       <GifsList :gifs="gifs" />
     </main>
@@ -47,6 +48,10 @@ export default {
   methods: {
     changeTextFilter(value) {
       this.textFilter = value
+    },
+    resetTextFilter() {
+      this.textFilter = ''
+      this.searchedGifs = []
     },
     async loadData() {
       const response = await fetch(
