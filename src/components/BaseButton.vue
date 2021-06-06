@@ -34,24 +34,35 @@ export default {
 @import '@/assets/styles/scss/variables.scss';
 
 .base-button {
+  font-family: $base-ff;
   display: inline-block;
   border: 0;
   padding: 4px 8px;
   cursor: pointer;
-  background-color: $clr-hl-blue;
-  transition: all 0.25s ease-in-out;
+  background-color: $clr-4;
+  color: $clr-1;
+  border: 1px solid $clr-1;
+  font-weight: $bold;
+  font-size: $fs-h5;
+  box-shadow: 2px 2px $clr-2;
 
   &:hover {
-    background-color: $clr-blue;
-    color: $clr-white;
+    background-color: $clr-1;
+    color: $clr-4;
   }
 
   &.primary {
-    background-color: $clr-hl-red;
+    background-color: $clr-1;
+    color: $clr-4;
 
     &:hover {
-      background-color: $clr-red;
+      background-color: $clr-4;
+      color: $clr-1;
     }
+  }
+
+  img {
+    margin-right: 10px;
   }
 }
 </style>

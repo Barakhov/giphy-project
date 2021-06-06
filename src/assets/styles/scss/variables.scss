@@ -1,72 +1,42 @@
-/* larger than heading font sizes */
-
-$fs-giga: 80px;
-$fs-mega: 70px;
-$fs-kilo: 60px;
 /* heading font sizes */
 
-$fs-h1: 36px;
-$fs-h2: 32px;
-$fs-h3: 28px;
-$fs-h4: 24px;
-$fs-h5: 20px;
-$fs-h6: 18px;
+$fs-h1: 4.209rem;
+$fs-h2: 3.157rem;
+$fs-h3: 2.369rem;
+$fs-h4: 1.777rem;
+$fs-h5: 1.333rem;
+
 /* base font size - applied at body / html level */
 
-$fs-base: 16px;
-/* smaller than heading font sizes */
+$fs-base: 1rem;
 
-$fs-milli: 14px;
-$fs-micro: 10px;
-$fs-nano: 8px;
 /*Weights*/
-
 $bold: 700;
-$semibold: 600;
 $regular: 400;
+
 /*Base*/
 
-$base-ff: 'Work Sans', sans-serif;
-$base-fs: var($fs-base);
-$base-fw: var($regular);
-$base-lh: var($fs-h6);
+$base-ff: 'Darker Grotesque', sans-serif;
+$base-fs: $fs-base;
+$base-fw: $regular;
+$base-lh: 1.75;
 $base-gap: 4px;
+
 /*Gap*/
 
-$gap-xxxxl: calc(var($base-gap) * 10);
-/*40*/
+$gap-2xl: 40px;
+$gap-xl: 24px;
+$gap-lg: 16px;
+$gap-md: 8px;
+$gap-sm: $base-gap;
 
-$gap-xxxl: calc(var($base-gap) * 8);
-/*32*/
-
-$gap-xxl: calc(var($base-gap) * 6);
-/*24*/
-
-$gap-xl: calc(var($base-gap) * 5);
-/*20*/
-
-$gap-lg: calc(var($base-gap) * 4);
-/*16*/
-
-$gap-md: calc(var($base-gap) * 2);
-/*8*/
-
-$gap-sm: calc(var($base-gap));
 /*Colors*/
 
-/*Primary*/
+$clr-b: #000000;
+$clr-w: #ffffff;
+$clr-1: #8838d6;
+$clr-2: #c693da;
+$clr-3: #eccbdc;
+$clr-4: #fee4dd;
 
-$clr-black: #000000;
-$clr-white: #ffffff;
-$clr-blue: #003049;
-/*Secondary*/
-
-$clr-red: #D62828;
-$clr-orange: #F77F00;
-$clr-yellow: #FCBF49;
-$clr-lemon: #EAE2B7;
-/*Highlight*/
-
-$clr-hl-blue: rgba(0, 48, 73, 0.2);
-$clr-hl-red: rgba(214, 40, 40, 0.2);
-$clr-hl-yellow: rgba(252, 191, 73, 0.3);
+$clr-g: #ddfee9;

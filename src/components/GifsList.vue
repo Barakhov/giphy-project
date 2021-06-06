@@ -39,6 +39,7 @@ export default {
 @import '@/assets/styles/scss/variables.scss';
 
 h3 {
+  color: $clr-1;
   margin: 20px 0 10px;
 }
 
@@ -49,12 +50,13 @@ h3 {
 }
 
 .gif-block {
+  border: 1px solid $clr-1;
+
   position: relative;
   display: inline-block;
-  border-radius: 5px;
   overflow: hidden;
-  box-shadow: 4px 4px $clr-orange;
-  background-color: $clr-lemon;
+  box-shadow: 4px 4px $clr-2;
+  background-color: $clr-4;
 
   &__p {
     position: absolute;
@@ -64,7 +66,10 @@ h3 {
     padding: 1rem;
     margin: 0;
     text-align: center;
-    background-color: $clr-lemon;
+    font-size: $fs-h5;
+    font-weight: $bold;
+    color: $clr-1;
+    background-color: $clr-4;
   }
 
   &__img {

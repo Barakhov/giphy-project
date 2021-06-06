@@ -52,7 +52,7 @@ export default {
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-color: $clr-hl-yellow;
+  background-color: $clr-2;
   padding: 20px;
 }
 </style>
