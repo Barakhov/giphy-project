@@ -1,20 +1,43 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
-import Home from '@/views/Home.vue'
-import Login from '@/views/Login.vue'
 
 Vue.use(VueRouter)
+
+const ROUTES_URL = {
+  LOGIN: {
+    path: 'login', // importante no tener barra "/" antes del path...
+    name: 'Login',
+  },
+  REGISTER: {
+    path: 'register',
+    name: 'Register',
+  },
+}
 
 const routes = [
   {
     path: '/',
     name: 'Home',
-    component: Home,
+    component: () => import('@/views/Home.vue'),
   },
   {
-    path: '/login',
-    name: 'Login',
-    component: Login,
+    ...ROUTES_URL.LOGIN,
+    component: () => import('@/views/Login.vue'),
+  },
+  {
+    path: '/auth',
+    name: 'Auth',
+    component: () => import('@/views/Auth.vue'),
+    children: [
+      {
+        ...ROUTES_URL.LOGIN,
+        component: () => import('@/views/Login.vue'),
+      },
+      {
+        ...ROUTES_URL.REGISTER,
+        component: () => import('@/views/Register.vue'),
+      },
+    ],
   },
 ]
 

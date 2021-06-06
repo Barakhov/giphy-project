@@ -14,10 +14,34 @@ body {
   -moz-osx-font-smoothing: grayscale;
 
   background-color: $clr-g;
+
+  position: relative;
+
+  padding: 20px;
+
+  &::after {
+    content: '';
+    display: block;
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    pointer-events: none;
+
+    overflow-x: hidden; /* For Opera */
+
+    box-shadow: inset #471877 0 0 0 5px, inset #521c87 0 0 0 1px,
+      inset #6623a9 0 0 0 10px, inset #7a2acb 0 0 0 11px,
+      inset #8838d6 0 0 0 16px, inset #c693da 0 0 0 17px,
+      inset #eccbdc 0 0 0 22px, inset #fee4dd 0 0 0 23px;
+  }
 }
 
 main {
-  padding: 0 $gap-lg;
+  padding: $gap-lg;
 }
 
 h1,
@@ -25,9 +49,9 @@ h2,
 h3,
 h4,
 h5 {
-  margin: 3rem 0 1.38rem;
+  // margin: 3rem 0 1.38rem;
   font-family: $base-ff;
-  font-weight: 700;
+  font-weight: $bold;
   line-height: 1.3;
 }
 
@@ -55,4 +79,8 @@ h5 {
 small,
 .text_small {
   font-size: 0.75rem;
+}
+
+.clr-1 {
+  color: $clr-1;
 }

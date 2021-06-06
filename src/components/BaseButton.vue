@@ -47,8 +47,8 @@ export default {
   box-shadow: 2px 2px $clr-2;
 
   &:hover {
-    background-color: $clr-1;
-    color: $clr-4;
+    background-color: $clr-g;
+    color: $clr-b;
   }
 
   &.primary {
