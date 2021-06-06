@@ -6,7 +6,12 @@
       </slot>
     </h3>
     <section class="gifs-wrapper">
-      <div v-for="gif in gifs" :key="gif.id" class="gif-block">
+      <div
+        v-for="gif in gifs"
+        :key="gif.id"
+        class="gif-block"
+        @click="selectItem(gif.id)"
+      >
         <img class="gif-block__img" :src="getImage(gif)" :alt="gif.title" />
         <p class="gif-block__p">{{ gif.title }}</p>
       </div>
@@ -30,6 +35,9 @@ export default {
   methods: {
     getImage(gif) {
       return gif.images.original.url
+    },
+    selectItem(gifId) {
+      this.$emit('select-gif', gifId)
     },
   },
 }
