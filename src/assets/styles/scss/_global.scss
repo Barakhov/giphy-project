@@ -4,6 +4,10 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+body {
+  background-color: $clr-hl-blue;
+}
+
 main {
   padding: 0 10px;
 }
