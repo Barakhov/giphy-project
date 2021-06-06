@@ -26,6 +26,12 @@ export default {
     font-weight: $bold;
     font-size: $fs-h4;
     color: $clr-1;
+    text-decoration: none;
+
+    &:hover,
+    &.router-link-exact-active {
+      text-decoration: underline;
+    }
   }
 }
 </style>

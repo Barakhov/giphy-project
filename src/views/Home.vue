@@ -28,7 +28,11 @@
         :gifs="searchedGifs"
         section-title="Searched Gifs"
       />
-      <GifsList :gifs="gifs" section-title="Trending Gifs" />
+      <GifsList
+        :gifs="gifs"
+        section-title="Trending Gifs"
+        @select-gif="navigateToDetail"
+      />
     </main>
   </div>
 </template>
@@ -81,6 +85,9 @@ export default {
       const { data } = await response.json()
 
       this.searchedGifs = data
+    },
+    navigateToDetail(gifId) {
+      this.$router.push({ name: 'GifDetail', params: { id: gifId } })
     },
   },
 }

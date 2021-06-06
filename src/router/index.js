@@ -39,6 +39,12 @@ const routes = [
       },
     ],
   },
+  {
+    path: '/gif/:id',
+    name: 'GifDetail',
+    component: () => import('@/views/GifDetail.vue'),
+    props: true,
+  },
 ]
 
 const router = new VueRouter({
