@@ -1,5 +1,10 @@
 <template>
-  <button class="base-button" :class="theme" @click="$emit('click')">
+  <button
+    class="base-button"
+    :class="theme"
+    :type="type"
+    @click="$emit('click')"
+  >
     <slot>{{ text }}</slot>
   </button>
 </template>
@@ -16,6 +21,10 @@ export default {
       type: String,
       default: '',
       validate: (value) => ['primary'].includes(value),
+    },
+    type: {
+      type: String,
+      default: 'button',
     },
   },
 }

@@ -17,7 +17,8 @@ export default {
     type: {
       type: String,
       default: 'text',
-      validate: (value) => ['text', 'number'].includes(value),
+      validate: (value) =>
+        ['text', 'number', 'email', 'password'].includes(value),
     },
     name: {
       type: String,

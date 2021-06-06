@@ -1,6 +1,10 @@
 <template>
   <div>
-    <h3>Trending Gifs</h3>
+    <h3>
+      <slot>
+        {{ sectionTitle }}
+      </slot>
+    </h3>
     <section class="gifs-wrapper">
       <div v-for="gif in gifs" :key="gif.id" class="gif-block">
         <img class="gif-block__img" :src="getImage(gif)" :alt="gif.title" />
@@ -18,6 +22,10 @@ export default {
       type: Array,
       default: () => [],
     },
+    sectionTitle: {
+      type: String,
+      default: '',
+    },
   },
   methods: {
     getImage(gif) {
@@ -29,6 +37,10 @@ export default {
 
 <style lang="scss" scoped>
 @import '@/assets/styles/scss/variables.scss';
+
+h3 {
+  margin: 20px 0 10px;
+}
 
 .gifs-wrapper {
   display: grid;
