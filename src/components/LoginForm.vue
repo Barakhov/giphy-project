@@ -31,8 +31,16 @@ export default {
       form: {},
     }
   },
-  method: {
-    onSubmit() {},
+  methods: {
+    onSubmit() {
+      const isValid = this.validateForm()
+      if (isValid) {
+        this.$emit('submit-form')
+      }
+    },
+    validateForm() {
+      return this.form.email && this.form.password
+    },
   },
 }
 </script>
