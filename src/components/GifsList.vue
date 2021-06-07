@@ -63,6 +63,7 @@ h3 {
   overflow: hidden;
   box-shadow: 4px 4px $clr-2;
   background-color: $clr-4;
+  cursor: pointer;
 
   &__p {
     position: absolute;
