@@ -36,3 +36,16 @@ export default {
   },
 }
 </script>
+
+<style scoped lang="scss">
+input {
+  padding: 4px 8px;
+  background-color: $clr-4;
+  color: $clr-1;
+  border: 1px solid $clr-1;
+  font-weight: 700;
+  font-size: 1.333rem;
+  box-shadow: 2px 2px;
+  min-height: 42px;
+}
+</style>

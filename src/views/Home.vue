@@ -3,25 +3,26 @@
     <BaseHeader />
     <main>
       <!-- <input type="text" @input="searchGifs" /> -->
-
-      <BaseInput
-        v-model="textFilter"
-        name="searchGif"
-        placeholder="Tyepea aquí.."
-        @key-enter="searchGifs(textFilter)"
-      />
-      <BaseButton theme="primary" @click="searchGifs(textFilter)">
-        <div class="d--f jc--c ai--c">
-          <img src="@/assets/icons/eye.svg" alt="" />
-          <span>Have a look</span>
-        </div>
-      </BaseButton>
-      <BaseButton @click="resetTextFilter">
-        <div class="d--f jc--c ai--c">
-          <img src="@/assets/icons/reset.svg" alt="" />
-          <span>Reset</span>
-        </div>
-      </BaseButton>
+      <div class="d--f ai--c jc--c">
+        <BaseInput
+          v-model="textFilter"
+          name="searchGif"
+          placeholder="Tyepea aquí.."
+          @key-enter="searchGifs(textFilter)"
+        />
+        <BaseButton theme="primary" @click="searchGifs(textFilter)">
+          <div class="d--f jc--c ai--c">
+            <img src="@/assets/icons/eye.svg" alt="" />
+            <span>Have a look</span>
+          </div>
+        </BaseButton>
+        <BaseButton @click="resetTextFilter">
+          <div class="d--f jc--c ai--c">
+            <img src="@/assets/icons/reset.svg" alt="" />
+            <span>Reset</span>
+          </div>
+        </BaseButton>
+      </div>
 
       <GifsList
         v-if="searchedGifs.length"
