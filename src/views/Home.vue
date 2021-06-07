@@ -3,27 +3,28 @@
     <BaseHeader />
     <main>
       <!-- <input type="text" @input="searchGifs" /> -->
-      <div class="d--f ai--c jc--c">
+      <div class="d--f ai--c jc--c fd--c">
         <BaseInput
           v-model="textFilter"
           name="searchGif"
           placeholder="Tyepea aquí.."
           @key-enter="searchGifs(textFilter)"
         />
-        <BaseButton theme="primary" @click="searchGifs(textFilter)">
-          <div class="d--f jc--c ai--c">
-            <img src="@/assets/icons/eye.svg" alt="" />
-            <span>Have a look</span>
-          </div>
-        </BaseButton>
-        <BaseButton @click="resetTextFilter">
-          <div class="d--f jc--c ai--c">
-            <img src="@/assets/icons/reset.svg" alt="" />
-            <span>Reset</span>
-          </div>
-        </BaseButton>
+        <div>
+          <BaseButton theme="primary" @click="searchGifs(textFilter)">
+            <div class="d--f jc--c ai--c">
+              <img src="@/assets/icons/eye.svg" alt="" />
+              <span>Search</span>
+            </div>
+          </BaseButton>
+          <BaseButton @click="resetTextFilter">
+            <div class="d--f jc--c ai--c">
+              <img src="@/assets/icons/reset.svg" alt="" />
+              <span>Reset</span>
+            </div>
+          </BaseButton>
+        </div>
       </div>
-
       <GifsList
         v-if="searchedGifs.length"
         :gifs="searchedGifs"
