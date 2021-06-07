@@ -44,8 +44,6 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-@import '@/assets/styles/scss/variables.scss';
-
 h3 {
   color: $clr-1;
   margin: 20px 0 10px;

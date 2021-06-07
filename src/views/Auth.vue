@@ -17,7 +17,7 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-@import '@/assets/styles/scss/variables.scss';
+// @import '@/assets/styles/scss/variables.scss';
 
 .auth-links {
   margin-bottom: 20px;

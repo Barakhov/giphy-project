@@ -46,8 +46,6 @@ export default {
 </script>
 
 <style scoped lang="scss">
-@import '@/assets/styles/scss/variables.scss';
-
 .login-form {
   display: flex;
   flex-direction: column;

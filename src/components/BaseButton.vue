@@ -31,8 +31,6 @@ export default {
 </script>
 
 <style lang="scss">
-@import '@/assets/styles/scss/variables.scss';
-
 .base-button {
   font-family: $base-ff;
   display: inline-block;
