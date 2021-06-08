@@ -33,10 +33,12 @@ body {
 
     overflow-x: hidden; /* For Opera */
 
-    box-shadow: inset #471877 0 0 0 5px, inset #521c87 0 0 0 1px,
-      inset #6623a9 0 0 0 10px, inset #7a2acb 0 0 0 11px,
-      inset #8838d6 0 0 0 16px, inset #c693da 0 0 0 17px,
-      inset #eccbdc 0 0 0 22px, inset #fee4dd 0 0 0 23px;
+    box-shadow: inset $clr-1 0 0 0 10px;
+
+    // box-shadow: inset #471877 0 0 0 5px, inset #521c87 0 0 0 1px,
+    //   inset #6623a9 0 0 0 10px, inset #7a2acb 0 0 0 11px,
+    //   inset #8838d6 0 0 0 16px, inset #c693da 0 0 0 17px,
+    //   inset #eccbdc 0 0 0 22px, inset #fee4dd 0 0 0 23px;
   }
 }
 
