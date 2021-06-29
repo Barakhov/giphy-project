@@ -12,6 +12,7 @@
         class="gif-block"
         @click="selectItem(gif.id)"
       >
+        <p>{{ gif.id }}</p>
         <img class="gif-block__img" :src="getImage(gif)" :alt="gif.title" />
         <p class="gif-block__p">{{ gif.title }}</p>
       </div>
